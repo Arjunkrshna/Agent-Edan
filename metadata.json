@@ -1,5 +1,5 @@
 {
-  "name": "EDAN Assist (Pilot)",
+  "name": "EDAN Assist (ProtoType)",
   "description": "An AI-powered IT support assistant for Microsoft 365, featuring diagnostic tools, evidence bundling, and ServiceNow integration.",
   "requestFramePermissions": []
 }
