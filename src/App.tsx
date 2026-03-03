@@ -13,7 +13,7 @@ function App() {
     {
       id: '1',
       role: 'model',
-      content: "J.A.R.V.I.S. SYSTEM INITIALIZED.\n\nUnified Communications Neural Interface Online.\nTelemetry Sensors: ACTIVE.\n\nAwaiting input or visual artifacts for analysis.",
+      content: "E.D.A.N. SYSTEM INITIALIZED.\n\nEnhanced Diagnostic & Analysis Network Online.\nTelemetry Sensors: ACTIVE.\n\nAwaiting input or visual artifacts for analysis.",
       timestamp: new Date().toISOString(),
     },
   ]);
@@ -259,12 +259,12 @@ function App() {
   };
 
   return (
-    <div className="flex h-screen bg-[#0d1b2a] text-[#e0f7ff] font-tech overflow-hidden bg-grid-pattern relative">
+    <div className="flex h-screen bg-[#050a10] text-[#e0f7ff] font-tech overflow-hidden bg-grid-pattern relative">
       {/* Background Overlay */}
-      <div className="absolute inset-0 bg-radial-gradient from-transparent to-[#0d1b2a] pointer-events-none z-0"></div>
+      <div className="absolute inset-0 bg-radial-gradient from-transparent to-[#050a10] pointer-events-none z-0"></div>
       
       {/* Left Sidebar - Admin & Audit */}
-      <div className="w-80 flex flex-col border-r border-[#00f0ff]/20 bg-[#1b263b]/90 backdrop-blur-md z-20 relative">
+      <div className="w-80 flex flex-col border-r border-[#00f0ff]/20 bg-[#0d1b2a]/80 backdrop-blur-md z-20 relative shadow-[10px_0_30px_rgba(0,0,0,0.5)]">
         <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#00f0ff]/50 to-transparent"></div>
         <div className="h-1/3 border-b border-[#00f0ff]/20 p-4 overflow-hidden relative group">
           <div className="hud-corner hud-corner-tl"></div>
@@ -285,7 +285,7 @@ function App() {
       {/* Main Chat Area */}
       <div className="flex-1 flex flex-col min-w-0 relative z-10">
         {/* Top HUD Bar */}
-        <div className="h-12 border-b border-[#00f0ff]/20 bg-[#1b263b]/80 backdrop-blur flex items-center justify-between px-6">
+        <div className="h-12 border-b border-[#00f0ff]/20 bg-[#0d1b2a]/60 backdrop-blur flex items-center justify-between px-6">
            <div className="flex items-center space-x-4">
               <div className="flex items-center text-[#00f0ff] text-xs tracking-widest">
                 <Cpu className="w-4 h-4 mr-2 animate-pulse-cyan" />
@@ -297,7 +297,7 @@ function App() {
               </div>
            </div>
            <div className="text-[#00f0ff]/50 text-[10px] tracking-[0.2em]">
-              MK-85 PROTOCOL // V.2.0.4
+              EDAN PROTOCOL // V.3.0.0
            </div>
         </div>
         <ChatPanel 
@@ -308,7 +308,7 @@ function App() {
       </div>
 
       {/* Right Sidebar - Case Dashboard */}
-      <div className="w-[480px] border-l border-[#00f0ff]/20 bg-[#1b263b]/90 backdrop-blur-md z-20 shadow-[-10px_0_30px_rgba(0,240,255,0.05)] relative">
+      <div className="w-[480px] border-l border-[#00f0ff]/20 bg-[#0d1b2a]/80 backdrop-blur-md z-20 shadow-[-10px_0_30px_rgba(0,0,0,0.5)] relative">
         <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#00f0ff]/50 to-transparent"></div>
         <CasePanel caseState={caseState} onCreateTicket={handleCreateTicket} />
       </div>
